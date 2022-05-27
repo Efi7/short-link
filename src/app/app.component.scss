@@ -10,7 +10,7 @@
   hr {
     height: 5px;
     background-color: #572388;
-    box-shadow: 0 4px 4px 0px #5723889e;
+    box-shadow: 0 4px 4px 0 #5723889e;
     border: none;
     border-radius: 40px;
   }
@@ -19,6 +19,7 @@
 .input-short {
   display: flex;
   justify-content: center;
+  margin-top: 4rem;
 
   .input-container {
     border: solid 3px #572388;
@@ -50,6 +51,35 @@
       cursor: pointer;
       color: #572388;
       text-decoration: underline;
+    }
+  }
+}
+
+.shorted-url {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3bce8;
+  margin: 10px;
+  border-radius: 10px;
+
+  p {
+    border: 3px solid #572388;
+    padding: 5px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  span {
+    border: 3px solid #572388;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+    border-left: none;
+    transition: 400ms;
+    background: rgb(255 255 255 / 30%);
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(255 255 255 / 50%);
     }
   }
 }

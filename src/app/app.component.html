@@ -8,5 +8,5 @@
   </span>
 </div>
 <div *ngIf="shortedUrl" class="shorted-url">
-  <p>{{shortedUrl}}</p><span class="copy">Copy</span>
+  <p>{{shortedUrl}}</p><span class="copy" ngxClipboard [cbContent]="shortedUrl" (click)="alert('Copied!')">Copy</span>
 </div>
