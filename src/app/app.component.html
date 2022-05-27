@@ -1,0 +1,12 @@
+<div class="header">
+  <p>Short link</p>
+  <hr>
+</div>
+<div class="input-short">
+  <span class="input-container"><input placeholder="enter url here" class="input" #originalUrl>
+    <span class="button" (click)="shortUrl(originalUrl.value)">Short ></span>
+  </span>
+</div>
+<div *ngIf="shortedUrl" class="shorted-url">
+  <p>{{shortedUrl}}</p><span class="copy">Copy</span>
+</div>
